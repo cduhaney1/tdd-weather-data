@@ -1,26 +1,28 @@
 
 // Implement the following functions to fulfill the tests!
-function getLocationName(city) {
-    return city.name;
+function getLocationName(weather) {
+    return weather.name;
 };
-function getLocationCountry(global) {
-    return global.sys.country;
+function getLocationCountry(weather) {
+    return weather.sys.country;
 };
-function getLocationLatitude(latit) {
-    return latit.coord.lat;
+function getLocationLatitude(weather) {
+    return weather.coord.lat;
 };
-function getLocationLongitude(long) {
-    return long.coord.lon;
+function getLocationLongitude(weather) {
+    return weather.coord.lon;
 };
-function getDescription(sky) {
-    return sky.weather[0].description
+function getDescription(weather) {
+    return weather.weather[0].description
 };
-function getWindSpeed(air) {
-    return air.wind.speed
+function getWindSpeed(weather) {
+    return weather.wind.speed
 };
-function getSunrise(rise) {
-    return rise.sys.sunrise
+function getSunrise(weather) {
+    return weather.sys.sunrise
 };
+
+
 
 
 // Please ignore the following
